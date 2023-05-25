@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    font-family: 'VT323', monospace;
+    font-size: 32px;
+    background: #dcdcdc;
+}
+
+main {
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.container {
+    border: 10px solid #ffffff;
+    border-style: inset;
+}
+
+.board {
+    max-width: inherit;
+    border: 8px solid #dbdbdb;
+    border-style: inset;
+    height: 100%;
+    background: #b0b0b0;
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; */
+}
+
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.box {
+    position: relative;
+    height: 40px;
+    width: 40px;
+    border-right: 3px dotted black;
+    border-bottom: 3px dotted black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    border: 3px solid #d7d7d7;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    border-style: outset;
+    outline: none;
+    padding: 3px;
+    background: #a0a0a0;
+}
+
+.bomb {
+    background: url(./images/bomb.gif) no-repeat center/cover;
+}
+
+.bomb img{
+    width: 100%;
+}
+
+.blue {
+    color: blue;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
